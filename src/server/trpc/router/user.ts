@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { router, publicProcedure } from "../trpc";
-import argon2 from "argon2";
+import * as argon2 from "argon2";
 import { TRPCError } from "@trpc/server";
 
 export const userRouter = router({
